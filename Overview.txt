@@ -1,0 +1,48 @@
+Questions:
+Can the measurements of various protein levels be sufficient as diagnostic markers for determining diagnosis?
+
+Project learning outcomes:
+Part 1: Run PCA for 3D data visualization (HCV.m)
+
+Part 2: 
+Train a neural network on the full input data (not just the reduced 3 dimensions) and use to predict diagnosis
+I will run a simple NN with 1 hidden layer with 10 activation units, 1 input and 1 output layer.
+(HCV_nn.m)
+
+Part 3:
+Doing up a learning curve to diagnose for issues with bias/variance.
+Optimizing parameters: Find optimal lambda for best training results.
+(HCV_opt.m - WIP)
+
+
+
+Inputs:
+ALB - albumin
+ALP - alkaline phosphatase
+ALT - alanine amino-transferase
+AST - aspartate amino-transferase
+BIL - bilirubin
+CHE - choline esterase
+CHOL - (unable to find)
+CREA - (unable to find)
+GGT - gamma-glutamyl transferase
+PROT - (unable to find)
+
+Outputs:
+Note: All blood donor and suspected case data removed.
+1 = Hepatitis
+2 = Fibrosis
+3 = Cirrhosis
+
+Hepatitis C virus is the causative agent of Hepatitis C, which can lead to chronic inflammation, with increased damage leading to excessive tissue remodelling as observed in fibrosis.
+Further accumulation of such scarring results in severe scarring of the liver and greatly reduced liver function (cirrhosis).
+
+Therapeutic interventions largely involve antiviral regimens, and are effectively controlled in most chronic cases.
+The regimen differs depending on HCV genotype and presence and absence of cirrhosis, which can also determine the necessity of liver transplantation.
+Since progressive fibrosis is the major cause of morbidity in chronic liver diseases, it is imperative that prognostic markers must be identified that can predict disease progression,
+such that therapeutic interventions can begin early. 
+
+Data set courtesy of:
+Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+
+http://archive.ics.uci.edu/ml/datasets/HCV+data#
